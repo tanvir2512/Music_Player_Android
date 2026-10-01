@@ -1,0 +1,40 @@
+name: pulse_music
+description: "Pulse Music — a modern purple & black offline music player."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State management
+  provider: ^6.1.2
+
+  # Audio playback + background/notification controls
+  just_audio: ^0.10.5
+  just_audio_background: ^0.0.1-beta.17
+
+  # Reads mp3 / m4a files from device storage
+  on_audio_query: ^2.9.0
+
+  # Local persistence (favorites, playlists, play counts, settings)
+  shared_preferences: ^2.3.2
+
+  # Share song info
+  share_plus: ^10.0.2
+
+  # Unique ids for playlists
+  uuid: ^4.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
